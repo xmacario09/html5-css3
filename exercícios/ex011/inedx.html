@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <h2>Imagens que se adaptam sozinhas.</h2>
+    <P>Tente abrir esse site em dispositívos diferentes, ou simplismente aumente e dimunúa o tamanho do seu navegador. </P>
+    <p>Utilizamos a tag PICTURE e dentro dele o IMG. Para as imagens se ajustarem, foi necessário usar a tag SOURCE:MIDIA:TYPE, em ordem.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/P.png" type="image/png">
+        <source media="(max-width: 1050PX )" srcset="imagens/M.png" type="image/png">
+        <img src="Imagens/G.png" alt="Imagem flexível">
+    </picture>
+    <h1>MÍDIAS EM MP3</h1>
+    <p>Agora vamos reproduzir audios no nosso site.</p>
+    <audio preload="none" autoplay controls>
+        <source src="midia/mp3.mp3" type="audio.mpeg">
+        <source src="midia/mp3.mp3" type="audio/ogg">
+        <source src="midia/mp3.mp3" type="audio/way">
+    </audio>
+</body>
+</html>
